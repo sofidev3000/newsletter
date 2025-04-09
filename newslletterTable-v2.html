@@ -22,7 +22,7 @@
             max-width: 600px;
             background-color: black;
             border: 1px solid white;
-         /*    padding: 0 8px; */
+            padding: 0 8px;
         }
 
         h3,
@@ -47,17 +47,17 @@
         h3 {
             font-family: "Inter", serif;
             color: #ff0000;
-            margin: 10px 0 ;
+            margin: 10px 0;
         }
 
         table {
             table-layout: auto;
             width: 100%;
             overflow-x: hidden;
-            padding:10px;
         }
-        tr{
-            margin-bottom: 20px!important;
+
+        tr {
+            margin-bottom: 20px !important;
         }
 
         .news-image:not(.banner) {
@@ -65,21 +65,27 @@
             height: 100%;
             object-fit: cover;
             max-width: 300px !important;
-          /*   max-height: 300px !important; */
+            /*   max-height: 300px !important; */
             min-height: 200px !important;
             min-width: 200px !important;
             align-self: end;
         }
-        .banner{
-            min-width: none!important;
-            min-height: none!important;
+
+        .banner {
+            min-width: none !important;
+            min-height: none !important;
             margin: 30px 0;
         }
 
         .main-news,
         .additional-news {
-            margin-bottom: 50px;
-            border-bottom: 1px solid #ff0000;
+            margin-bottom: 50px !important;
+            border-bottom: 1px solid #ff0000 !important;
+        }
+
+        .news-item-column {
+            margin-bottom: 20px !important;
+            border-bottom: 1px solid #ff0000 !important;
         }
 
         .banner {
@@ -96,13 +102,15 @@
         }
 
         .content__columns {
+            padding: 0;
+            ;
             column-count: 2;
         }
 
         .main-news .content td {
             width: 50%;
             vertical-align: top;
-            padding: 10px;
+
         }
 
         .additional-news {
@@ -117,7 +125,7 @@
 
         .additional-news .news-item td {
             vertical-align: center;
-            padding: 10px;
+
         }
 
         @media (max-width: 485px) {
@@ -146,19 +154,17 @@
 
 <body>
     <div class="mail__container">
-        <table>
-            <tr>
-                <td colspan="1">
-                    <img src="./nearShoringLogoRed.svg"
-                        alt="Banner Image" class="logo"
-                        style="min-width:100% !important; min-height:120px!important; object-fit: contain!important; ">
-                </td>
+        <table style="width: 100%; padding: 10px;">
+            <tr style="width: 100%; height: 100%; margin-bottom: 9px;">
+                <td colspan="1" style="width: 100%; height: 100%;   padding: 6px 50px;">
+                    <img style="object-fit: contain; width: 100%;" src="./nearShoringLogoRed.svg" alt="Banner Image"
+                        class="logo" </td>
             </tr>
-            <tr style="width: 100%; height: 100%; margin: 0 auto;">
-                <td colspan="1" style="margin: 0 auto; width: 100%!important;">
-                    <img src="https://cdn.pixabay.com/photo/2024/01/07/14/12/man-8493246_1280.jpg"
-                        alt="Banner Image" class="banner"
-                        style="width:100%!important; height:180px!important; margin:0 auto!important ; object-fit: cover!important; aspect-ratio: 16/9;">
+            <tr style="width: 100%; height: 100%;  ">
+                <td colspan="1" style="   margin:0 auto!important ;  width: 100%!important;padding: 0 20px;">
+                    <img src="https://cdn.pixabay.com/photo/2024/01/07/14/12/man-8493246_1280.jpg" alt="Banner Image"
+                        class="banner"
+                        style="width:100%!important;  max-height:180px!important; object-fit: cover!important;     aspect-ratio: 16/9;">
                 </td>
             </tr>
             <tr>
@@ -213,37 +219,98 @@
                         <tr>
                             <td>
                                 <a href="#" class="notice-link" style="color: white; text-decoration: none">
-                                    <h3>INFRAESTRUCTURA</h3>
-                                    <h2 style="color: white;">Modernización de infraestructura y desarrollos</h2>
+                                    <h3>PUBLIC OPINION </h3>
+                                    <h2 style="color: white;">
+                                        Concern Over Food and Water
+                                        Supply Grows Among
+                                    </h2>
                                 </a>
                                 <p style="color: white;">
-                                    El proyecto se encuentra actualmente en sus etapas iniciales, que implican la
-                                    obtención de permisos y la gestión de tierras. Se estima que la producción a gran
-                                    escala dará inicio en un plazo no mayor a dos años. ui ulloritatis nobis etum venim
-                                    a volore volor aut doloreic tempos ratibus dent quis aliquatem haribus a sita ex ea
-                                    que sinctempor site od evero op Bus a pre ommodia quasitatur sequunto qui
-                                    ulloritatis nobis etum venim a volaskdj laskj ui ulloritatis nobis etum venim a
-                                    volore volor aut doloreic tempos ratibus dent quis aliquatem haribus a sita ex ea
-                                    que sinctempor site od evero op Bus a pre ommodia qu
+                                    From the source: Consumption-based emissions
+                                    attribute the emissions generated in the production of goods and services according
+                                    to where
+                                    they were consumed, rather than where they were
+                                    produced. In other words, this metric accounts for
+                                    how manufacturing has moved to specific countries, allowing consumers in other
+                                    regions to benefit from goods while the emissions are recorded
+                                    elsewhere. The coloring in this graphic highlights
+                                    the per capita emissions disparity between the
+                                    Global North and Global South. First used in the
+                                    1980s, these informal terms differentiate between
+                                    economically developed, industrialized nations,
+                                    mostly located in the North
                                 </p>
 
                             </td>
                             <td>
-                                <img class="news-image" src="https://cdn.pixabay.com/photo/2016/11/29/01/34/man-1866572_1280.jpg"
+                                <img class="news-image"
+                                    src="https://cdn.pixabay.com/photo/2016/11/29/01/34/man-1866572_1280.jpg"
                                     alt="News Image 1">
                             </td>
                         </tr>
                     </table>
                 </td>
             </tr>
+
+            <table class="additional-news">
+                <tr class="additional-news">
+                    <!-- Columna de noticias -->
+                    <td style="width: 400px; padding-right: 20px;">
+                        <div class="news-item-column">
+                            <a href="#" class="notice-link" style="color: white; text-decoration: none">
+                                <h3>Patata</h3>
+                                <h2 style="color: white;">Modernización de infraestructura y desarrollos</h2>
+                            </a>
+                            <p style="color: white;">
+                                El proyecto se encuentra actualmente en sus etapas iniciales, que implican la obtención
+                                de permisos...
+                            </p>
+                        </div>
+
+                        <div class="news-item-column">
+                            <a href="#" class="notice-link" style="color: white; text-decoration: none">
+                                <h3>INFRAESTRUCTURA</h3>
+                                <h2 style="color: white;">Modernización de infraestructura y desarrollos</h2>
+                            </a>
+                            <p style="color: white;">
+                                El proyecto se encuentra actualmente en sus etapas iniciales...
+                            </p>
+                        </div>
+
+                        <div class="news-item-column">
+                            <a href="#" class="notice-link" style="color: white; text-decoration: none">
+                                <h3>INFRAESTRUCTURA</h3>
+                                <h2 style="color: white;">Modernización de infraestructura y desarrollos</h2>
+                            </a>
+                            <p style="color: white;">
+                                El proyecto se encuentra actualmente en sus etapas iniciales...
+                            </p>
+                        </div>
+
+                        <div class="">
+                            <a href="#" class="notice-link" style="color: white; text-decoration: none">
+                                <h3>INFRAESTRUCTURA</h3>
+                                <h2 style="color: white;">Modernización de infraestructura y desarrollos</h2>
+                            </a>
+                            <p style="color: white;">
+                                El proyecto se encuentra actualmente en sus etapas iniciales...
+                            </p>
+                        </div>
+                    </td>
+
+                    <!-- Columna de imagen -->
+                    <td class="news-item" style="width: 300px; height: 600px;">
+                        <img class="news-image "
+                            style="width: 100%; height: 100%; object-fit: cover; object-position: center;"
+                            src="./banner300x600.png" alt="News Image 1" />
+                    </td>
+                </tr>
+            </table>
+
             <tr>
                 <td colspan="2" class="additional-news">
                     <table class="news-item">
                         <tr>
-                            <td>
-                                <img class="news-image" src="https://ci3.googleusercontent.com/meips/ADKq_NbqrfLQKKSYg-mePpqF8iUeT23Ym__YsZSxtDOAF77mtR-96HVTlHZDVq8OKF7HlkPsEkj9roE2Nlooc8jsvJNkaMjtT4YfEwc3X7d9OauYi5VPKOh4IXKALYBh2lCAHIc0UQ=s0-d-e1-ft#https://nxt-global-media.s3.amazonaws.com/near/images/21012025/9055e4393e.jpg"
-                                    alt="News Image 1">
-                            </td>
                             <td>
                                 <a href="#" class="notice-link" style="color: white; text-decoration: none">
                                     <h3>INFRAESTRUCTURA</h3>
@@ -260,32 +327,9 @@
                                     que sinctempor site od evero op Bus a pre ommodia qu
                                 </p>
                             </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" class="additional-news">
-                    <table class="news-item">
-                        <tr>
                             <td>
-                                <a href="#" class="notice-link" style="color: white; text-decoration: none">
-                                    <h3>INFRAESTRUCTURA</h3>
-                                    <h2 style="color: white;">Modernización de infraestructura y desarrollos</h2>
-                                </a>
-                                <p style="color: white;">
-                                    El proyecto se encuentra actualmente en sus etapas iniciales, que implican la
-                                    obtención de permisos y la gestión de tierras. Se estima que la producción a gran
-                                    escala dará inicio en un plazo no mayor a dos años. ui ulloritatis nobis etum venim
-                                    a volore volor aut doloreic tempos ratibus dent quis aliquatem haribus a sita ex ea
-                                    que sinctempor site od evero op Bus a pre ommodia quasitatur sequunto qui
-                                    ulloritatis nobis etum venim a volaskdj laskj ui ulloritatis nobis etum venim a
-                                    volore volor aut doloreic tempos ratibus dent quis aliquatem haribus a sita ex ea
-                                    que sinctempor site od evero op Bus a pre ommodia qu
-                                </p>
-                            </td>
-                            <td>
-                                <img class="news-image" src="https://ci3.googleusercontent.com/meips/ADKq_Na3IC3XsCA1KYJEJMwKDsm0UoScwESBZJBQqXPOb_JtriJtbAE4bB-IZTxChBlaJAfgCwqaMifqN-Q6cDSb6jgOTIsZTF8pSM6TgLIwhWTp46egdgOCzk-w-4yE_orevx2d7g=s0-d-e1-ft#https://nxt-global-media.s3.amazonaws.com/near/images/27012025/4949539b14.jpg"
+                                <img class="news-image"
+                                    src="https://ci3.googleusercontent.com/meips/ADKq_Na3IC3XsCA1KYJEJMwKDsm0UoScwESBZJBQqXPOb_JtriJtbAE4bB-IZTxChBlaJAfgCwqaMifqN-Q6cDSb6jgOTIsZTF8pSM6TgLIwhWTp46egdgOCzk-w-4yE_orevx2d7g=s0-d-e1-ft#https://nxt-global-media.s3.amazonaws.com/near/images/27012025/4949539b14.jpg"
                                     alt="News Image 1">
                             </td>
                         </tr>
@@ -297,7 +341,8 @@
                     <table class="news-item">
                         <tr>
                             <td>
-                                <img class="news-image" src="https://ci3.googleusercontent.com/meips/ADKq_NbqrfLQKKSYg-mePpqF8iUeT23Ym__YsZSxtDOAF77mtR-96HVTlHZDVq8OKF7HlkPsEkj9roE2Nlooc8jsvJNkaMjtT4YfEwc3X7d9OauYi5VPKOh4IXKALYBh2lCAHIc0UQ=s0-d-e1-ft#https://nxt-global-media.s3.amazonaws.com/near/images/21012025/9055e4393e.jpg"
+                                <img class="news-image"
+                                    src="https://ci3.googleusercontent.com/meips/ADKq_NbqrfLQKKSYg-mePpqF8iUeT23Ym__YsZSxtDOAF77mtR-96HVTlHZDVq8OKF7HlkPsEkj9roE2Nlooc8jsvJNkaMjtT4YfEwc3X7d9OauYi5VPKOh4IXKALYBh2lCAHIc0UQ=s0-d-e1-ft#https://nxt-global-media.s3.amazonaws.com/near/images/21012025/9055e4393e.jpg"
                                     alt="News Image 1">
                             </td>
                             <td>
